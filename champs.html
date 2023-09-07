@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeones</title>
+    <link rel="stylesheet" href="./stylee/style.css">
+    <script src="https://kit.fontawesome.com/7a79a5386a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> <!--iNICIO Encabezado-->
+        <div>
+            <img class="logo" src="./img/LOL_Logo.PNG" alt="Logo lol">
+        </div>
+
+        <!--BOTÓN DE MENÚ DESPLEGABLE-->
+        <div>
+            <button class="menu-toggle-abrir" id="btn-abrir">
+                <img src="./img/menuToggle.png" alt="Menú">
+            </button>
+
+            <!--ENLACES DEL MENU-->
+            <nav class="nav" id="nav">
+                <button class="menu-toggle-cerrar" id="btn-cerrar">
+                    <img src="./img/close.png" alt="">
+                </button>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./shop.html">Tienda</a></li>
+                    <li><a href="./champs.html">Campeones</a></li>
+                    <a class="btn-iniciar-sesion" n href="./registro.html" target="_blank">INICIAR SESION</a>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--CIERRE ENCABEZADO-->
+
+    <h1>CREA TU CAMPEON</h1>
+    <form>
+        <input type="text" id="champ" placeholder="Nombre">
+        <input type="text" id="recurso" placeholder="Recurso">
+
+        <select id="rol" name="rolOption">
+            <option>Top</option>
+            <option>Mid</option>
+            <option>Jungla</option>
+            <option>ADC</option>
+            <option>Support</option>
+        </select>
+
+        <select id="region" name="regionOption">
+            <option>Runaterra</option>
+            <option>Noxus</option>
+            <option>Jonia</option>
+            <option>Aguas Turbias</option>
+            <option>Piltover</option>
+            <option>Shurima</option>
+            <option>Zaun</option>
+            <option>El vacio</option>
+            <option>Islas de las sombras</option>
+            <option>Targon</option>
+            <option>Ixtal</option>
+            <option>Freljord</option>
+            <option>Demacia</option>
+        </select>
+    </form>
+
+    <p id="cartel-required"></p>
+
+    <button id=btn-agregar>Agregar champ</button>
+    <button id=btn-eliminar>Eliminar champ</button>
+    <button id=btn-vaciar>Vaciar tabla</button>
+    <button id=btn-agregar-tres>Agregar 3 champs</button>
+    <input type="checkbox" id="destacar-campeon">Especiales
+
+    <table id="tabla-dinamica">
+        <thead>
+            <tr>
+                <th>Campeon</th>
+                <th>Recurso</th>
+                <th>Rol</th>
+                <th>Region</th>
+            </tr>
+        </thead>
+
+        <!-- parte default de la tabla, donde agregamos y eliminamos-->
+        <tbody id="tabla-body">
+        </tbody>
+    </table>
+
+    <h2>CAMPEONES ESPECIALES</h2>
+    <section class="campeones-especiales">
+        <div class="contenedor-especial">
+            <p>BARDO</p>
+            <img title="BARDO" src="./img/bardo1.png" alt="
+        bardo">
+        </div>
+        <div class="contenedor-especial">
+            <p>RIVEN</p>
+            <img title="RIVEN" src="./img/riven1.png" alt="">
+        </div>
+        <div class="contenedor-especial">
+            <p>PYKE</p>
+            <img title="PYKE" src="./img/pyke.png" alt="">
+        </div>
+        <div class="contenedor-especial">
+            <p>TEEMO</p>
+            <img title="TEEMO" src="./img/teemo.png" alt="">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="derechos">
+            <img class="riot-games" src="./img/riot.png" alt="">
+            <img class="adolescentes" src="./img/img footer esrb.png" alt="">
+            <p>© 2023 Unicen. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="redes-sociales">
+            <a href="#">
+                <img src="./img/twitter.png" alt="">
+            </a>
+            <a href="#"><img src="img/yt.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="./js/champs.js"></script>
+    <script src="./js/menuToggle.js"></script>
+</body>
+
+</html>

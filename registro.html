@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="stylee/style.css">
+    <script src="https://kit.fontawesome.com/7a79a5386a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> <!--iNICIO Encabezado-->
+        <div>
+            <img class="logo" src="./img/LOL_Logo.PNG" alt="Logo lol">
+        </div>
+
+        <!--BOTÓN DE MENÚ DESPLEGABLE-->
+        <div>
+            <button class="menu-toggle-abrir" id="btn-abrir">
+                <img src="./img/menuToggle.png" alt="Menú">
+            </button>
+
+            <!--ENLACES DEL MENU-->
+            <nav class="nav" id="nav">
+                <button class="menu-toggle-cerrar" id="btn-cerrar">
+                    <img src="./img/close.png" alt="">
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./shop.html">Tienda</a></li>
+                    <li><a href="./champs.html">Campeones</a></li>
+                    <a class="btn-iniciar-sesion" n href="./registro.html" target="_blank">INICIAR SESION</a>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--CIERRE ENCABEZADO-->
+
+    <div id="fuera-captcha">
+        <div class="titulo-registro">
+            <h1 class="h1-registro">REGISTRATE</h1>
+        </div>
+
+        <form action="" id="form" class="form-registro">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="password" name="contraseña" placeholder="contraseña" required minlength="5">
+            <button>Ingresar</button>
+        </form>
+    </div>
+
+    <div class="mensaje-captcha">
+        <p id="estado-captcha"> </p>
+    </div>
+
+    <div class="espacio-captcha" id="espacio-captcha">
+        <button id="generar-captcha">Generar Captcha</button>
+        <p class="preguntar-suma" id="preguntar-suma"> </p>
+        <input type="text" id="resultado-de-suma" placeholder="Ingrese resultado" size="15" />
+        <button id="validar-captcha">Enviar</button>
+    </div>
+
+    <div class="advertencias">
+        <h2>ADVERTENCIAS</h2>
+        <h3>Posibles daños de registrarte en lol:</h3>
+        <ul>
+            <li>Nunca tener novia</li>
+            <li>Perder amigos</li>
+            <li>Quedar calvo</li>
+            <li>Subir de peso</li>
+        </ul>
+    </div>
+
+        <img class="victoria" src="img/ALISTAR.gif" alt="">
+    <footer>
+        <div class="derechos">
+            <img class="riot-games" src="./img/riot.png" alt="">
+            <img class="adolescentes" src="./img/img footer esrb.png" alt="">
+            <p>© 2023 Unicen. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="redes-sociales">
+            <a href="#">
+                <img src="./img/twitter.png" alt="">
+            </a>
+            <a href="#"><img src="img/yt.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/registro.js"></script>
+    <script src="./js/menuToggle.js"></script>
+</body>
+
+</html>
